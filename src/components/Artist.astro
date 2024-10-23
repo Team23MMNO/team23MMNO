@@ -1,0 +1,39 @@
+---
+import "../styles/style.css"
+import "../styles/listview.css"
+export async function getStaticPaths() {
+  const url = "https://aubowponttgegxkewjdk.supabase.co/rest/v1/artistlistview"
+  const options = {
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1Ym93cG9udHRnZWd4a2V3amRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk1MTUyMDEsImV4cCI6MjA0NTA5MTIwMX0.29jDaVvBOPBJW_dA8vhGGtCnpeAtYI4pW6rEVtbJZyY"
+    }
+  }
+  
+  const artists = await fetch(url, options).then(res=>res.json())
+  
+  return artists.map(artist => ({
+      params: { artist: artist.slug }, // [artist]=artist.slug
+      props: { artist } // send al data med som props
+    }))
+}
+const { artist } = Astro.props;
+console.log(artist) // artist.name, artist.image osv.
+---
+
+<article>
+    <img src="" alt="">
+    <h7></h7>
+</article>
+
+<style>
+h7 {
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+</style>
+
+
+curl 'https://aubowponttgegxkewjdk.supabase.co/rest/v1/artistlistview?select=*' \
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1Ym93cG9udHRnZWd4a2V3amRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk1MTUyMDEsImV4cCI6MjA0NTA5MTIwMX0.29jDaVvBOPBJW_dA8vhGGtCnpeAtYI4pW6rEVtbJZyY
+          
