@@ -22,20 +22,22 @@ import Button from "../components/Button.astro";
         <img src="../public/images/last.png" alt="" />
       </section>
       <h1>General Information</h1>
-      <p>
-        Karrusel is a circus themed rave presenting some of the world's leading
-        electronic artists.
-      </p>
-      <p>
-        Terms: 18+ event. Karrusel takes place rain or shine. Artists subject to
-        change.
-      </p>
-      <p>
-        Opening Hours <br />
-        Thursday 22 Aug 2024: 18.00-01.00 <br />
-        Friday 23 Aug 2024: 18.00-04.00 <br />
-        Saturday 24 Aug 2024: 18.00-03.00
-      </p>
+      <section class="information-grid">
+        <p>
+          Karrusel is a circus themed rave presenting some of the world's
+          leading electronic artists.
+        </p>
+        <p>
+          Terms: 18+ event. Karrusel takes place rain or shine. Artists subject
+          to change.
+        </p>
+        <p>
+          Opening Hours <br />
+          Thursday 22 Aug 2024: 18.00-01.00 <br />
+          Friday 23 Aug 2024: 18.00-04.00 <br />
+          Saturday 24 Aug 2024: 18.00-03.00
+        </p>
+      </section>
       <h1>FAQ</h1>
       <section class="card-grid">
         <Card
@@ -56,8 +58,10 @@ import Button from "../components/Button.astro";
         />
       </section>
       <h1>News Sign-Up</h1>
-      <Button variant="primary" size="medium">Email Address</Button>
-      <Button variant="secondary" size="medium">Sign Up</Button>
+      <section class="signup-grid">
+        <Button variant="primary" size="medium">Email Address</Button>
+        <Button variant="secondary" size="medium">Sign Up</Button>
+      </section>
     </main>
     <footer></footer>
   </body>
