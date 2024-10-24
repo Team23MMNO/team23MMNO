@@ -6,7 +6,9 @@
   height: 733px;
   left: 0;
   object-fit: cover;
+  opacity: 0.8;
 }
+
 h3{
     color: #fff;
     text-align: center;
