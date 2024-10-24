@@ -1,18 +1,13 @@
 ---
-
+import "../styles/style.css";
+import "../styles/listview.css";
+import MainLayout from "../layouts/MainLayout.astro";
+import Artist from "../components/Artist.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-    <p>testing this shit</p>
-    <p>testing how this works on branches</p>
-  </body>
-</html>
+<MainLayout>
+  <div class="listview-wrap">
+    <h1>Lineup</h1>
+    <h2>2024</h2>
+  </div>
+</MainLayout>
