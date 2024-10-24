@@ -1,0 +1,42 @@
+---
+/*const header = Astro.props.header;
+const text = Astro.props.text; */
+const { header, text } = Astro.props;
+---
+
+<article>
+  <h2>{header}</h2>
+  <p>{text}</p>
+</article>
+
+<style>
+  article {
+    border-radius: 25px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 138, 174, 0.6) 0%,
+      rgba(189, 164, 255, 0.6) 100%
+    );
+    width: 301px;
+    height: 270px;
+    flex-shrink: 0;
+  }
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+</style>

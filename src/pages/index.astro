@@ -1,18 +1,62 @@
 ---
-
+import "../styles/style.css";
+import Card from "../components/Faq.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<p>testing this shit</p>
-		<p>testing how this works on branches</p>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <main>
+      <h1>Gallery</h1>
+      <section class="gallery-grid">
+        <img src="../public/images/kona.png" alt="" />
+        <img src="../public/images/second.png" alt="" />
+        <img src="../public/images/skogur.png" alt="" />
+        <img src="../public/images/last.png" alt="" />
+      </section>
+      <h1>General Information</h1>
+      <p>
+        Karrusel is a circus themed rave presenting some of the world's leading
+        electronic artists.
+      </p>
+      <p>
+        Terms: 18+ event. Karrusel takes place rain or shine. Artists subject to
+        change.
+      </p>
+      <p>
+        Opening Hours <br />
+        Thursday 22 Aug 2024: 18.00-01.00 <br />
+        Friday 23 Aug 2024: 18.00-04.00 <br />
+        Saturday 24 Aug 2024: 18.00-03.00
+      </p>
+      <h1>FAQ</h1>
+      <Card
+        header="Can I bring food and drink to the festival?"
+        text="Only empty plastic bottles, snacks and fruits are allowed inside"
+      />
+      <Card
+        header="What will there be on site?"
+        text="3 music stages, a vintage carousel ride, nice bar and food stands, the witch cave, performances, bonfire, power banks, free water point, merchandise, info stands and much more"
+      />
+      <Card
+        header="Can I bring a backpack, a bag and/or a trolley? "
+        text="Only backpacks and soft case bags no bigger than 25x40cm are allowed. Trolleys and hard case bags are not allowed "
+      />
+      <Card
+        header="If I feel unsafe, who can I talk to and where can I go?"
+        text="You should reach out to our Awareness Team - they will be weearing a pink vest and walk around the site. You can ask any festival staff and they will guide you to the Awareness Team"
+      />
+      <h1>News Sign-Up</h1>
+      <Button variant="primary" size="medium">Email Address</Button>
+      <Button variant="secondary" size="medium">Sign Up</Button>
+    </main>
+    <footer></footer>
+  </body>
 </html>
