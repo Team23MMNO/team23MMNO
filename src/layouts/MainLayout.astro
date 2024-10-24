@@ -1,47 +1,47 @@
 ---
-import "../styles/style.css"
-import "../styles/listview.css"
+import "../styles/style.css";
+import "../styles/listview.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Karrusel</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Karrusel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-	<body>
-		<header>
-            <div class="logo-wrap">
-                <div>KARRUSEL</div>
-            </div>
-        
-            <div class="menu-wrap">
-                <a class="header-button" href="/listview">LINEUP</a>
-                <a class="header-button" href="info">INFO</a>
-                <a class="header-button" href="map">MAP</a>
-                <a class="ticket-cta" href="tickets">TICKETS</a>
-            </div>
-        </header>
+  <body>
+    <header>
+      <div class="logo-wrap">
+        <div>KARRUSEL</div>
+      </div>
 
-        <main>
-            <slot />
-        </main>
+      <div class="menu-wrap">
+        <a class="header-button" href="/listview">LINEUP</a>
+        <a class="header-button" href="info">INFO</a>
+        <a class="header-button" href="map">MAP</a>
+        <a class="ticket-cta" href="tickets">TICKETS</a>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
 
     <footer>
-        <div class="footer-wrap">
-            <a href="/">LINK TO APP</a>
-            <a href="/">LINK TO KARRUSEL 2024 SURVEY</a>
-            <a href="/">LINK TO "FIND MY FRIENDS" APP</a>
-            <a href="/">COPENHAGEN, REFSHALEØEN</a>
-        </div>
-        <div class="footer-icons">
-            <a href=""> <img src="/" alt="Facebook icon"> </a>
-            <a href=""> <img src="/" alt="Instagram icon"> </a>
-        </div>
+      <div class="footer-wrap">
+        <a href="/">LINK TO APP</a>
+        <a href="/">LINK TO KARRUSEL 2024 SURVEY</a>
+        <a href="/">LINK TO "FIND MY FRIENDS" APP</a>
+        <a href="/">COPENHAGEN, REFSHALEØEN</a>
+      </div>
+      <div class="footer-icons">
+        <a href=""> <img src="/" alt="Facebook icon" /> </a>
+        <a href=""> <img src="/" alt="Instagram icon" /> </a>
+      </div>
     </footer>
-	</body>
+  </body>
 </html>
