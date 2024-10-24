@@ -14,3 +14,13 @@ h2{
 body{
     background-color: #1B0B39;
 }
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+.gallery-grid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
