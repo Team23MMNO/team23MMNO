@@ -59,4 +59,57 @@ import Button from "../components/Button.astro";
     </main>
     <footer></footer>
   </body>
+=======
+import "../styles/style.css"
+import Card from "../components/Buyticket.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<header>
+            <div class="logo-wrap">
+                <div>KARRUSEL</div>
+            </div>
+        
+            <div class="menu-wrap">
+                <a class="header-button" href="/listview">LINEUP</a>
+                <a class="header-button" href="info">INFO</a>
+                <a class="header-button" href="map">MAP</a>
+                <a class="ticket-cta" href="tickets">TICKETS</a>
+            </div>
+        </header>
+
+        <main>
+            <slot />
+			<div class="image"><img class="karrusel" src="img/karrusel2.jpeg" /></div>
+			<div class="label"><p class="text-wrapper">28. - 30. August 2025</p></div>
+			<div class="label"><div class="text-wrapper2">Copenhagen</div></div>
+			<div class="label"><p class="text-wrapper3">3 days of house, disco and techno in the woods</p></div>
+			<div class="image"><img class="img" src="img/image 2.png" /></div>
+
+            
+            
+	
+        </main>
+
+    <footer>
+        <div class="footer-wrap">
+            <a href="/">LINK TO APP</a>
+            <a href="/">LINK TO KARRUSEL 2024 SURVEY</a>
+            <a href="/">LINK TO "FIND MY FRIENDS" APP</a>
+            <a href="/">COPENHAGEN, REFSHALEØEN</a>
+        </div>
+        <div class="footer-icons">
+            <a href=""> <img src="/" alt="Facebook icon"> </a>
+            <a href=""> <img src="/" alt="Instagram icon"> </a>
+        </div>
+    </footer>
+	</body>
 </html>
