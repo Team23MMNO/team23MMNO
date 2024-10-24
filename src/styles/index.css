@@ -16,7 +16,16 @@ h3{
     font-weight: 500;
     line-height: 32px;
 }
-
+.card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.gallery-grid{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 /*BUY TICKET*/
 
 .buy-ticket-now {
