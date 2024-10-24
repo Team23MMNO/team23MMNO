@@ -34,3 +34,10 @@ h2 {
 .listview-wrap h2 {
   margin-left: 100px;
 }
+
+.artist-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 50px 0 0 0;
+}

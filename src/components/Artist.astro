@@ -1,4 +1,7 @@
 ---
+const { src, alt, artistname } = Astro.props;
+
+
 import "../styles/listview.css"
 const artists = await fetch(
   "https://aubowponttgegxkewjdk.supabase.co/rest/v1/artistlistview?",
@@ -16,17 +19,43 @@ console.log(artists)
 
 
 
-<article>
-    <img src="" alt="">
-    <h7></h7>
+<article class="container">
+    <div>
+    <img src={src} alt={alt} class="centered-image" />
+    <h6 class="centered-text">{artistname}</h6>
+</div>
 </article>
 
 <style>
-h7 {
-    font-family: "Bebas Neue", sans-serif;
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center; /* Center the content within the container */
+    padding: 20px;
 }
+
+.centered-image {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.centered-text {
+    margin: 10px 0; /* Add margin for spacing under the image */
+    font-size: small; /* Adjust the font size */
+    display: block;   /* Ensure it's treated as block element */
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    transition: transform 0.1s ease-in-out; /* Apply smooth transition to the transform property */
+}
+img:hover{
+    transform: scale(1.2); /* Scale up the image when hovered */
+}
+
 
 </style>
 
-test
