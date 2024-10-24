@@ -2,17 +2,93 @@
 
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<p>testing this shit</p>
-		<p>testing how this works on branches</p>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karrusel Festival - KI/KI</title>
+    <style>
+        body {
+            background-color: #1c163d;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #2d234e;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .artist-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            border-radius: 5%
+            
+        }
+
+        .artist-info {
+            margin-top: 20px;
+        }
+
+        .artist-info h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            
+        }
+
+        .artist-info p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .event-details {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #a8a8a8;
+        }
+
+      .playlist-link {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #f06292;
+            text-decoration: none;
+            position: absolute;
+            display: block;
+        }
+
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/kiki2.webp" alt="KI/KI" class="artist-image">
+        <div class="artist-info">
+            <h1>KI/KI</h1>
+            <p>KI/KI, whose real name is Kiki Wesselo, is a producer and DJ based in Amsterdam, the Netherlands, known for her acid, trance, and rave sets. She had her first gig at the queer party SPIELRAUM at Radison in Amsterdam in June 2018, which immediately tested the fresh artist. KI/KI is known for her energetic sets, unique blends of classic rave tracks and acid and trance music from the 90s rave.</p>
+        </div>
+        <div class="event-details">
+            <p>Stage: Tribunen</p>
+            <p>Time: Friday from 20:00 - 21:15</p>
+        </div>
+        <a href="#" class="playlist-link">Listen to the artist's playlist</a>
+
+        <div class="footer">
+            Copenhagen, Refshaleøen
+        </div>
+
+    </div>
+</body>
 </html>
+
