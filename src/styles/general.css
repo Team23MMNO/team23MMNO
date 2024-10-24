@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: white;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  line-height: 136px;
+  font-family: "Bebas Neue", sans-serif;
+}
+h2 {
+  color: white;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1b0b39;
+}
+
+/*HEADER*/
+
+header {
+  background-color: white;
+  padding: 20px 0 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-wrap {
+  margin-right: auto;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #ff3774;
+}
+
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.menu-wrap .header-button:hover {
+  text-decoration: underline;
+}
+
+.menu-wrap .header-button {
+  text-decoration: none;
+  padding: 0 30px 0 30px;
+  color: #ff3774;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ticket-cta {
+  color: white;
+  border: 1px solid #ff3774;
+  border-radius: 25px;
+  padding: 10px 20px 5px 20px;
+  margin-left: 20px;
+  background-color: #ff3774;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.ticket-cta:hover {
+  color: #ff3774;
+  background-color: white;
+  transition: 0.2s;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: white;
+  padding: 20px 0 20px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.footer-wrap a {
+  padding: 8px 0 8px 0;
+  text-decoration: none;
+  color: #ff3774;
+  font-family: "Inter", sans-serif;
+}
+.footer-wrap a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 50px 20px 0;
+  text-decoration: none;
+  color: #ff3774;
+  font-family: "Inter", sans-serif;
+}
