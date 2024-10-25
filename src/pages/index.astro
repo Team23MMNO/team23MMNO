@@ -1,10 +1,10 @@
 ---
 import "../styles/general.css";
-import "../styles/index.css"
-import Buyticket from "../components/Buyticket.astro";
+import "../styles/index.css";
+import Buyticket from "../components/buyticket.astro";
 import Button from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Card from "../components/Faq.astro"
+import Card from "../components/Faq.astro";
 ---
 
 <html lang="en">
@@ -29,24 +29,22 @@ import Card from "../components/Faq.astro"
       </div>
     </header>
     <main>
-   
+      <div class="overlay">
+        <div class="_28-30-august-2025">28-30 AUGUST 2025</div>
+        <div class="copenhagen">COPENHAGEN</div>
 
-             <div class="overlay">
-                <div class="_28-30-august-2025">28-30 AUGUST 2025</div>
-                  <div class="copenhagen">COPENHAGEN</div>
-    
-    <div class="_3-days-of-house-disco-and-techno-in-the-woods">3 DAYS OF HOUSE, DISCO AND TECHNO IN THE WOODS</div>
-  
-      <img class="image-2" src="img/image-2.png" />
-             </div>
-          
-			<div class="image"><img class="karrusel" src="img/karrusel2.jpeg" /></div>
-			
+        <div class="_3-days-of-house-disco-and-techno-in-the-woods">
+          3 DAYS OF HOUSE, DISCO AND TECHNO IN THE WOODS
+        </div>
 
-            <Buyticket
-            />
-      
-   <h1>Gallery</h1>
+        <img class="image-2" src="img/image-2.png" />
+      </div>
+
+      <div class="image"><img class="karrusel" src="img/karrusel2.jpeg" /></div>
+
+      <Buyticket />
+
+      <h1>Gallery</h1>
       <section class="gallery-grid">
         <img src="../public/images/kona.png" alt="" />
         <img src="../public/images/second.png" alt="" />
@@ -109,5 +107,3 @@ import Card from "../components/Faq.astro"
     </footer>
   </body>
 </html>
-
-
