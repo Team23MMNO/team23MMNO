@@ -2,7 +2,7 @@
 import "../styles/index.css";
 import "../index.css"
 import "../styles/generals/general.css";
-import Buyticket from "../components/Faq.astro";
+import Buyticket from "../components/Buyticket.astro";
 import Button from "../components/Button.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
@@ -29,27 +29,23 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </header>
     <main>
-      <slot />
-      <div class="image">
-        <img class="karrusel" src="img/karrusel2.jpeg" />
-      </div>
-      <div class="label">
-        <p class="text-wrapper">28. - 30. August 2025</p>
-      </div>
-      <div class="label"><div class="text-wrapper2">Copenhagen</div></div>
-      <div class="label">
-        <p class="text-wrapper3">
-          3 days of house, disco and techno in the woods
-        </p>
-      </div>
-      <div class="image"><img class="img" src="img/image 2.png" /></div>
-      <h1>Gallery</h1>
-      <section class="gallery-grid">
-        <img src="../public/images/kona.png" alt="" />
-        <img src="../public/images/second.png" alt="" />
-        <img src="../public/images/skogur.png" alt="" />
-        <img src="../public/images/last.png" alt="" />
-      </section>
+   
+
+             <div class="overlay">
+                <div class="_28-30-august-2025">28-30 AUGUST 2025</div>
+                  <div class="copenhagen">COPENHAGEN</div>
+    
+    <div class="_3-days-of-house-disco-and-techno-in-the-woods">3 DAYS OF HOUSE, DISCO AND TECHNO IN THE WOODS</div>
+  
+      <img class="image-2" src="img/image-2.png" />
+             </div>
+          
+			<div class="image"><img class="karrusel" src="img/karrusel2.jpeg" /></div>
+			
+
+            <Buyticket
+            
+      
       <h1>General Information</h1>
       <section class="information-grid">
         <p>
